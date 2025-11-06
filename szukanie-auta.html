@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oto-moto</title>
+    <style>
+        tr, td, table{
+            border: 2px solid blueviolet;
+            border-collapse: collapse;
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .red::after{
+            content: "*";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+     <form action="#" method="post">
+        <table>
+        <tr><td><label for="marka" class="red">Marka:</label>
+        <input type="search" name="marka"></td><td></td>
+        <td><label for="miesiac">Miesiąc i rok produkcji:</label>
+        <input type="month" name="miesiac"></td>
+        <td><label for="suwak">Przebieg:</label>
+        <input type="range" name="suwak" min="25000" max="250000" step="25000"></td>
+        <td rowspan="2"><button type="submit">Szukaj</button>
+        </td></tr>
+        <tr><td><label for="model">Model:</label>
+        <input type="search" name="model"></td>        
+        <td><label for="nadwozie" class="red">Typ nadwozia</label>
+            <select name="nadwozie" multiple>
+            <option value="opcja 1">coupé</option>
+            <option value="opcja 2">hatchback</option>
+            <option value="opcja 3">kabriolet</option>
+            <option value="opcja 4">kombi</option>
+            <option value="opcja 5">sedan</option>
+        </select></td>
+        <td><label for="paliwo">Rodzaj paliwa:</label>
+        <select name="paliwo">
+            <option value="opcja 1">benzyna</option>
+            <option value="opcja 2">benzyna + elektryk</option>
+            <option value="opcja 3">benzyna + gaz</option>
+            <option value="opcja 4">diesel</option>
+            <option value="opcja 3">elektryk</option>
+        </select></td><td>        
+        <label for="suwak">Cena do:</label>
+        <input type="range" name="suwak" min="2000" max="500000" step="1000"></td></tr>
+         </table>
+    </form>
+</body>
+</html>
