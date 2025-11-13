@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ksiunszki</title>
+    <style>
+        body{
+            background-color: lightgoldenrodyellow;
+            font-size: large;
+            font-family:Calibri;
+        }
+        select{
+            background-color: palegoldenrod;
+            border: 2px solid darkgoldenrod;
+            border-radius: 15px;
+            font-size: medium;
+            padding-bottom: 3px;
+            padding-top: 3px;
+            padding-left: 8px;
+            padding-right: 8px;
+
+        }
+        input{
+            background-color: palegoldenrod;
+            border: 2px solid darkgoldenrod;
+            border-radius: 15px;
+            font-size: medium;
+            padding-bottom: 3px;
+            padding-top: 3px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .red::after{
+            content: "*";
+            color: red;}
+        .width{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+    <label for="tyt" class="red">Tytuł</label><label for=":">:</label><br>
+    <input type="search" name="tyt" required>
+    <br><br>
+    <label for="Jakosc">Jakość:</label><br>
+    <span><input type="checkbox" name="wybor" value="Wybór 1">niska</span><br>
+    <span><input type="checkbox" name="wybor" value="Wybór 2">DVD</span><br>
+    <span><input type="checkbox" name="wybor" value="Wybór 3">HD</span><br>
+    <span><input type="checkbox" name="wybor" value="Wybór 4">UHD</span><br>
+    <br>
+    <label for="dlug">Długość:</label><br>
+    <span><input type="radio" name="opcja" value="opcja 1">dowolna</span><br>
+    <span><input type="radio" name="opcja" value="opcja 2">do 20 min.</span><br>
+    <span><input type="radio" name="opcja" value="opcja 3">do 90 min.</span><br>
+    <span><input type="radio" name="opcja" value="opcja 4">powyżej 90 min.</span><br>
+    <br>
+    <label for="rodz">Rodzaj:</label><br>
+    <select name="rodzaj" class="width">
+        <option value="blank"></option>
+        <optgroup label="TV">
+            <option value="1">seriale</option>
+            <option value="2">widowiska</option>
+            <option value="3">bajki</option>
+        </optgroup>
+        <optgroup label="kino">
+            <option value="4">animowane</option>
+            <option value="5">biograficzne</option>
+            <option value="6">familijne</option>
+            <option value="7">komedie</option>
+            <option value="8">sensacyjne</option>
+            <option value="9">thrillery</option>
+        </optgroup>
+        <optgroup label="inne">
+            <option value="10">śmieszne</option>
+            <option value="11">teledyski</option>
+            <option value="12">wywiady</option>
+        </optgroup>
+    </select>
+    <br><br>
+    <input type="submit" value="Szukaj" class="width">
+          </td>
+        </tr>
+    </table>
+</body>
+</html>
