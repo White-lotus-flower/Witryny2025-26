@@ -1,0 +1,129 @@
+* {
+    font-family: Century, serif;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #CCA10B;
+    font-style: italic;
+    padding: 5px;
+    text-align: center;
+}
+h1 {
+    padding-left: 30px;
+}
+#lewy article img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin-left: 30px;
+}
+#prawy {
+    width: 30%;
+    height: 600px;
+    padding-top: 20px;
+    font-family: "Lucida Console", "Consolas", "Courier New", monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+footer {
+    background-color: #CCA10B;
+    color: white;
+    font-style: italic;
+    padding: 5px;
+    text-align: center;
+}
+#wybor {
+    position: relative;
+    left: 80%;
+    bottom: 80%;
+}
+td{
+    background-color: rgb(5, 160, 88);
+}
+td h3 {
+    position: relative;
+    left: 80%;
+    top: 80%;
+}
+/*
+body {
+    font-family: Century, serif;
+    margin: 0;
+    padding: 0;
+}
+
+#baner {
+    background-color: #CCA10B;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#baner img {
+    display: inline-block;
+    margin: 0 10px;
+}
+/*
+#left-block {
+    width: 70%;
+    height: 620px;
+    float: left;
+    background-color: rgba(5, 160, 88, 0.8);
+    padding: 20px;
+    text-align: left;
+}
+
+#left-block h1 {
+    margin-top: 0;
+}
+#right-block {
+    width: 30%;
+    height: 600px;
+    float: right;
+    background-color: rgba(5, 160, 88, 0.8);
+    padding-top: 20px;
+    font-family: 'Lucida Console', 'Consolas', 'Courier New', monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#right-block h2 {
+    text-align: center;
+}
+
+.image-label img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 30px 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-label input[type="checkbox"]:checked + img {
+    border: 3px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+#footer {
+    background-color: #CCA10B;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+}
+
+#summary {
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+hr {
+    border: 1px dashed #000;
+}
+input[type="checkbox"] {
+    display: none;
+}
+*/
