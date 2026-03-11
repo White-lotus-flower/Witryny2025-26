@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-rows: 100px auto 100px;
+            gap: 20px;
+            grid-template-columns: 1fr 3fr;
+        }
+        header {
+            border: solid black;
+            background-color: #fbefef;
+            grid-column: 1/3;
+            padding: 20px;
+        }
+        .pan{
+            border: solid black;
+            background-color: #f9dfdf;
+            display: grid;
+            grid-column: 1/2;
+            padding: 20px;
+        }
+        .gzaw{
+            border: solid black;
+            background-color: #f9dfdf;
+            grid-column: 2/3;
+            padding: 20px;
+        }
+        footer{
+            border: solid black;
+            background-color: #f5afaf;
+            grid-column: 1/3;
+            padding: 20px;
+            text-wrap: initial;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Nagłówek</h1></header>
+    <aside class="pan"><h3>Panel</h3>
+        <ul>
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="">Link 3</a></li>
+        </ul>
+    </aside>
+    <div class="gzaw"><h3>Główna zawartość</h3> <p>To jest główna zawartość strony. 
+        Tutaj znajduje się najważniejsza zawartość</p></div>
+    <footer>Stopka © 2026</footer>
+</body>
+</html>
