@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie - SMART CITY</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial;
+}
+header {
+    background-color: rgb(2, 2, 56);
+    color: white;
+    padding: 20px;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo {
+    width: 50px;
+}
+.main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.sidebar {
+    width: 200px;
+}
+.sidebar ul {
+    padding: 0;
+}
+.sidebar li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #d0d0d0;
+    margin-bottom: 10px;
+}
+.content {
+    flex: 1;
+    border: 1px solid #c1c1c1;
+    padding: 20px;
+}
+.stats {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.card {
+    border: 1px solid #c1c1c1;
+    text-align: center;
+    padding: 15px;
+}
+.footer {
+    background-color: rgb(2, 2, 56);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: #2a6480
+}
+.stat-icon{
+    width:40px;
+    height:40px;
+    fill: #26b0f0
+}
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <svg class="logo" viewBox="0 0 100 100">
+                <rect x="10" y="30" width="15" height="50" fill="#4FC3F7" />
+                <rect x="35" y="15" width="15" height="65" fill="#4FC3F7" />
+                <rect x="60" y="40" width="15" height="40" fill="#4FC3F7" />
+            </svg>
+            <h1>Zarządzanie Smart City</h1>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <aside class="sidebar">
+            <ul>
+
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9" />
+                    </svg>
+                    Transport
+                </li>
+
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <rect x="5" y="5" width="14" height="14" />
+                    </svg>
+                    Energia
+                </li>
+
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <polygon points="12,4 20,20 4,20" />
+                    </svg>
+                    Środowisko
+                </li>
+
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <polygon points="6,6 18,6 22,18 2,18" />
+                    </svg>
+                    Bezpieczeństwo
+                </li>
+
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h2>Mapa miasta</h2>
+            <p>Interaktywna wizualizacja infrastruktury miejskiej.</p>
+
+        </section>
+
+        <aside class="stats">
+
+            <div class="card">
+                <svg class="stat-icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="8" />
+                </svg>
+                <h3>120 km</h3>
+                <p>Dróg</p>
+            </div>
+
+            <div class="card">
+                <svg class="stat-icon" viewBox="0 0 24 24">
+                    <rect x="6" y="6" width="12" height="12" />
+                </svg>
+                <h3>45%</h3>
+                <p>Zieleni</p>
+            </div>
+
+            <div class="card">
+                <svg class="stat-icon" viewBox="0 0 24 24">
+                    <polygon points="12,4 20,20 4,20" />
+                </svg>
+                <h3>98%</h3>
+                <p>Oświetlenia LED</p>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Smart City - autor: Magdalena Rębosz</p>
+    </footer>
+</body>
+
+</html>
