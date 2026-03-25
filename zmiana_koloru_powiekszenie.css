@@ -1,0 +1,14 @@
+       button{
+            background-color: blue;
+            color: white;
+            border-radius: 4%;
+            border: none;
+            transition: 2s;
+            cursor: pointer;
+        }
+        button:hover{
+            transition: 2s;
+            background-color: green;
+            transform: scale(130%);
+            cursor: pointer;
+        }

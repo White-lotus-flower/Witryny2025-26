@@ -1,0 +1,29 @@
+body{
+            font-family: Arial;
+            background-color: #f0f4ff;
+        }
+        h1{
+            display: flex;
+            justify-self: center;
+            color: #333366;
+        }
+        .flex{
+            width: 20px;
+            display: flex;
+            column-gap: 20px;
+            
+        }
+        div{
+            width: 220px;
+            margin: 10%;
+            color: wheat;
+        }
+        .d1{
+            background-color: #4a90e2;
+        }
+        .d2{
+            background-color: #50c878;
+        }
+        .d3{
+            background-color: #9b59b6;
+        }
