@@ -28,18 +28,14 @@ const div = document.createElement("div");
 div.style.backgroundColor = "pink";
 
 const footerParagraph = document.createElement("p");
-footerParagraph.innerHTML = "&copy;";
+footerParagraph.innerText = "&copy;";
 footerParagraph.style.textAlign = "center";
 div.appendChild(footerParagraph);
 footer.appendChild(div);
 
 
-const headings = document.querySelectorAll("h1");
-headings.forEach(h1 => {
-    if (h1.textContent.trim() === "Kolumna III") {
-        h1.remove();
-    }
-});
+const h1_side = document.querySelectorAll(".side_column h1");
+        h1_side[1].remove();
 
 const p1 = document.createElement("p");
 p1.innerHTML = "<i>Pochylony tekst</i>";
