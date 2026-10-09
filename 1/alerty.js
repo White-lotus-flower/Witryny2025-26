@@ -12,4 +12,13 @@ przycisk1.addEventListener('click', function() {
         alert('Przykro mi, że nie chcesz kontynuować...');
       }
 });
+const przycisk2 = document.getElementById('klik2');
+przycisk1.addEventListener('click', function() {
+    let konfirm1 = confirm('CZy jesteś pewien, że chcesz kontynuować?');
+      if(konfirm1){
+        alert('No to kontynuuj...');
+      }else{
+        alert('Przykro mi, że nie chcesz kontynuować...');
+      }
+});
 
