@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="zarowka.css">
+    <script src="zarowka.js" defer></script>
+    
+</head>
+<body>
+       <div class="container">
+        <div class="lightbulb-section">
+            <img id="zarowkaoff" src="wylaczona.png" alt="Żarówka">
+        </div>
+
+        <div class="control-panel">
+
+            <div class="row-buttons">
+                <button id="btn-wlacz">Włącz</button>
+                <button id="btn-wylacz">Wyłącz</button>
+            </div>
+
+            <div class="row-radio">
+                <label for="wlaczona-radio">
+                    <input type="radio" id="wlaczona-radio" name="stan-zarowki"> Włączona
+                </label>
+                <label for="wylaczona-radio">
+                    <input type="radio" id="wylaczona-radio" name="stan-zarowki" checked> Wyłączona
+                </label>
+            </div>
+            <div class="row-checkbox">
+                <input type="checkbox" id="wylaczona-checkbox">
+                <label for="wylaczona-checkbox">Wyłączona</label>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

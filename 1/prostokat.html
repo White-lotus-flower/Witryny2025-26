@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="prostokat.js" defer></script>
+</head>
+<body>
+        <form id="formularz">
+        <label for="szerokosc">Szerokość:</label>
+        <input type="number" id="szerokosc" value="0" min="0" max="20" required>
+
+        <label for="wysokosc">Wysokość:</label>
+        <input type="number" id="wysokosc" value="0" min="0" max="20" required>
+
+        <label for="kolor">Kolor:</label>
+        <input type="color" id="kolor" value="#ffffff">
+
+        <button type="button" id="przycisk">Narysuj</button>
+        
+        <div id="prostokat"></div>
+        <p id="wynikObwod"></p>
+        <p id="wynikPole"></p>
+    </form>
+</body>
+</html>
