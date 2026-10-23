@@ -4,17 +4,21 @@ const btnWylacz = document.getElementById('btn-wylacz');
 const radioWlaczona = document.getElementById('wlaczona-radio');
 const radioWylaczona = document.getElementById('wylaczona-radio');
 const checkboxWylaczona = document.getElementById('wylaczona-checkbox');
+const etykietaCheckbox = document.getElementById('etykieta-checkbox');
 
 function ustawStan(czyWlaczona) {
     if (czyWlaczona) {
         img.src = 'wlaczona.png';
         radioWlaczona.checked = true;
-        checkboxWylaczona.checked = false;
+        checkboxWylaczona.checked = true;
+        etykietaCheckbox.textContent = 'Włączona';
     } else {
         img.src = 'wylaczona.png';
         radioWylaczona.checked = true;
-        checkboxWylaczona.checked = true;
-}}
+        checkboxWylaczona.checked = false;
+        etykietaCheckbox.textContent = 'Wyłączona';
+    }
+}
 
 btnWlacz.addEventListener('click', function() {
     ustawStan(true);
@@ -34,8 +38,9 @@ radioWylaczona.addEventListener('change', function() {
 
 checkboxWylaczona.addEventListener('change', function() {
     if (checkboxWylaczona.checked) {
-        ustawStan(false);
-    } else {
         ustawStan(true);
+    } else {
+        ustawStan(false);
     }
 });
+
