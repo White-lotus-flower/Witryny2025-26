@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="generator_tabel.js" defer></script>
+</head>
+<body>
+    <link rel="stylesheet" href="generator_tabel.css">
+
+    <h1>Generator tabel HTML</h1>
+
+    <div class="panel">
+        <label for="wiersze">Liczba wierszy:</label>
+        <input type="number" id="wiersze" min="0" max="500" placeholder="0 - 500">
+
+        <label for="kolumny">Liczba kolumn:</label>
+        <input type="number" id="kolumny" min="0" max="500" placeholder="0 - 500">
+
+        <button id="generuj">Generuj</button>
+    </div>
+
+    <table id="tabela"></table>
+
+    
+</body>
+</html>
